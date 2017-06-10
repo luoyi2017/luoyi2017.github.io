@@ -1,0 +1,41 @@
+命名规范：
+
+要方便以后查询！
+
+linux-  启用
+  base-  基础
+  centos-  与其他版本有区别才启用，比如安装啥的
+  ubuntu-  与其他版本有区别才启用
+mysql-
+mongodb-
+python-
+  base-  基础
+    standard_library-  标准库
+  algorithm-  算法
+  django-
+  scrapy-  主要放语法、举例等，具体有爬取某个站点啥的放crawler那
+web-    可直接启用
+  html-
+  css-
+  javascript-
+markdown-
+github-
+git-
+crawler-   爬虫
+  python-  爬取采用的语言
+    zhihu-  被爬取的站点
+editor-    编辑器
+  atom-
+
+
+通用前缀
+  install-        安装
+  configuration-  配置
+  note-           笔记
+  questions-      问题
+
+blog
+
+
+command命令
+exam考试测试
