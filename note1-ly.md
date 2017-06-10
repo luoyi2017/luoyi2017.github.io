@@ -110,8 +110,8 @@ rmdir -p c/d      删除多级目录
 ```
 
 #### 拷贝
-
 > 常用的2条命令:  cp -a(拷贝文件) ；  cp -ar（当我们需要拷贝目录的时候）
+
 ```
 cp /dir1/file1	/dir2/
 cp /dir1/file1	/dir2/file2
@@ -155,7 +155,7 @@ rm --help       显示命令在线帮助
 rm --version    显示命令版本信息
 ```
 
-#### 快捷键：
+#### 快捷键
 ```
 crtl + c        强制结束进程
 ctrl + d        发送一个exit信号，类似ctrl+c的操作，没有那么强烈，可在root用户和普通用户中来回切换，继续ctrl+d则会注销
@@ -189,6 +189,7 @@ man [123456789] command（资料待整理）
 man -k passwd   执行关键字搜索
 man -f useradd useradd的man page 文件是哪个？
 ```
+
 |按键  |进行工作|
 |------|--------|
 |空格键|向下翻一页|
@@ -204,6 +205,7 @@ man -f useradd useradd的man page 文件是哪个？
 
 #### 时间
 > 常用的：date "+%Y-%m-%d %H:%M:%S"
+
 ```
 date                            获取当前时间
 date +%F                        获取当前日期
@@ -278,4 +280,4 @@ whereis     查看命令所在的具体位置
 find        查找文件
 rpm         查看当前安全的软件（待查资料）
 ```
----
+
