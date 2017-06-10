@@ -207,10 +207,10 @@ grep -r "close" /home/* | more   在home目录下所有文件中查找，包括c
     - h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)  
 
 #### 用户及用户组管理  
-- \/etc\/passwd 存储用户账号  
-- \/etc\/group 存储组账号  
-- \/etc\/shadow 存储用户账号的密码  
-- \/etc\/gshadow 存储用户组账号的密码  
+- /etc/passwd 存储用户账号  
+- /etc/group 存储组账号  
+- /etc/shadow 存储用户账号的密码  
+- /etc/gshadow 存储用户组账号的密码  
 - useradd 用户名  
 - userdel 用户名  
 - adduser 用户名  
@@ -219,7 +219,7 @@ grep -r "close" /home/* | more   在home目录下所有文件中查找，包括c
 - passwd root 给root设置密码  
 - su root  切换到root用户
 - su - root  
-- \/etc\/profile 系统环境变量  
+- /etc/profile 系统环境变量  
 - bash_profile 用户环境变量  
 - .bashrc 用户环境变量  
 - su user 切换用户，加载配置文件.bashrc  

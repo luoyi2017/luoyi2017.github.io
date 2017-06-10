@@ -265,8 +265,17 @@ $ git archive
 
 
 ---
+#### git用本地覆盖远程
 强推，即利用强覆盖方式用你本地的代码替代git仓库内的内容
 git push -f
+
+#### git用远程覆盖本地
+放弃本地的修改，用远程的库的内容就可以，应该如何做？傻傻地办法就是用心的目录重新clone一个，正确的做法是什么？
+正确的做法应该是：
+git fetch --all
+git reset --hard origin/master
+git fetch 只是下载远程的库的内容，不做任何的合并git reset 把HEAD指向刚刚下载的最新的版本
+
 #### `git init` 初始化
 ```
 $ git init
