@@ -35,13 +35,13 @@
 
 ## HTML模板
 ```html
-<!doctype html>       <!-- HTML标准声明    只能在第一行  (不是标签，只是声明文档HTML的标准，面试题会考) -->
+<!doctype html>       <!-- HTML标准声明  HTML5  只能在第一行  (不是标签，只是声明文档HTML的标准) -->
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    <!-- 声明文档的字符串编码集 -->
     <meta charset=”utf-8” />   <!-- 简写方式 -->
-    <meta name=”keywords” content=”关键词，关键字” />
-    <meta name=”description” content=”网页的描述信息，共搜索引擎识别，八十字以内” />
+    <meta name="Keywords" content="关键字" />
+    <meta name="description" content="描述 80字以内" />
     <title>网页标签上的标题</title>
   </head>
   <body>
@@ -129,13 +129,14 @@
 ```html
 <a href=""></a>
 
-
 <a href="#"></a> 跳转到当前页面(回归到页面顶部)
 
 <a href="javascript: void(0);"></a> 死链接，不会跳转，一般用于js特效
-
+ 
 <a href="#name">锚点到一个标签上，点击则滚动到那个标签位置</a>
-
+例：
+    <a href="#top">跳到name="top"或id="top"的标签，id内的内容具有唯一性</a>
+    
 <a href="http://baidu.com">跳转到百度</a> 跳转到百度  需要注意的是 http 不能少
 
 ```
@@ -172,22 +173,22 @@
 
 
 ## 无序列表
-```html
-<ul>
-    <li>111</li>
-    <li>222</li>
-    <li>333</li>
-</ul>
-```
+
 > ps: 默认会有小黑圆点 有的浏览器可能呈现空心小圆点
 
-| 属性 | 描述 |
+```html
+<ul type="circle">
+    <li>disc:默认，实心小圆圈</li>
+    <li>square：实心方块</li>
+    <li>circle：空心圆</li>
+</ul>
+```
+
+| type属性 | 描述 |
 |    ---   |  --- |
 |   disc   | 默认值，小圆点 |
 |   square | 实心方块 |
 |   circle | 空心圆 |
-
-
 
 ## 有序列表
 ```html
@@ -198,7 +199,7 @@
 </ol>
 ```
 
-| 属性 | 描述 |
+| type属性 | 描述 |
 |    ---   |  --- |
 |   1   | 默认值，数字列表排序 |
 |   a   | 小写字母排序 |
@@ -210,9 +211,12 @@
 
 ## 自定义列表
 ```html
+自定义列表没有type属性
 <dl>
     <dt>标题</dt>
-    <dl>描述</dl>
+    <dd>数据1</dd>
+    <dd>数据2</dd>
+    <dd>数据3</dd>
 </dl>
 ```
 
