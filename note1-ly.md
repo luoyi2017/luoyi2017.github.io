@@ -9,12 +9,11 @@ cd ../tmp     相对路径，不以正斜线开头
 pwd           查看当前所在的工作目录
 ```
 
-#### 关机/重启
-&nbsp;&nbsp;&nbsp;&nbsp;shutdown命令可以安全地关闭或重启Linux系统，它在系统关闭之前给系统上的所有登录用户提示一条警告信息。该命令还允许用户指定一个时间参数，可以是一个精确的时间，也可以是从现在开始的一个时间段。精确时间的格式是hh:mm，表示小时和分钟，时间段由+ 和分钟数表示。系统执行该命令后会自动进行数据同步的工作。  
+#### 关机/重启  
+　　shutdown命令可以安全地关闭或重启Linux系统，它在系统关闭之前给系统上的所有登录用户提示一条警告信息。该命令还允许用户指定一个时间参数，可以是一个精确的时间，也可以是从现在开始的一个时间段。精确时间的格式是hh:mm，表示小时和分钟，时间段由+ 和分钟数表示。系统执行该命令后会自动进行数据同步的工作。  
 　　halt是最简单的关机命令，其实际上是调用shutdown -h命令。halt执行时，杀死应用进程，文件系统写操作完成后就会停止内核。  
-reboot的工作过程与halt类似，其作用是重新启动，参数也与halt类似。reboot命令重启动系统时是删除所有的进程，而不是平稳地终止它们。因此，使用reboot命令可以快速地关闭系统，但如果还有其它用户在该系统上工作时，就会引起数据的丢失。所以使用reboot命令的场合主要是在单用户模式。
-
-init是所有进程的祖先，其进程号始终为1。init用于切换系统的运行级别，切换的工作是立即完成的。定义在/etc/inittab文件设定。
+reboot的工作过程与halt类似，其作用是重新启动，参数也与halt类似。reboot命令重启动系统时是删除所有的进程，而不是平稳地终止它们。因此，使用reboot命令可以快速地关闭系统，但如果还有其它用户在该系统上工作时，就会引起数据的丢失。所以使用reboot命令的场合主要是在单用户模式。  
+　　init是所有进程的祖先，其进程号始终为1。init用于切换系统的运行级别，切换的工作是立即完成的。定义在/etc/inittab文件设定。
 
 >系统重新启动总结：shutdown -r now，reboot，init 6；
 系统关机总结：half，shutdown -h now, init 0；
@@ -69,9 +68,11 @@ ls -lh         列出文件的同时查看文件的大小
 ```
 #### 更新文件
 > touch:更新文件的时间戳/如果目标不存在，会创建一个空文件
+
 ```
 touch aa	   如a存在则更新时间戳，不存在则创建空文件aa
 ```
+
 #### 序列(sequence)
 ```
 seq 100                   产生1到100的序列
@@ -84,15 +85,15 @@ seq 1 2 10 |xargs touch   创建或更新1到10内的偶数文件，很多命令
 touch: missing file operand
 Try `touch --help' for more information.
 
-mkdir `seq 1 2 10`        创建出1到10内的奇数文件目录，不能与文件名相同，否则无法创建
-[ly@vagrant-centos65 ~]$ mkdir `seq 1 2 10`
-mkdir: cannot create directory `1': File exists
-mkdir: cannot create directory `3': File exists
-mkdir: cannot create directory `5': File exists
-mkdir: cannot create directory `7': File exists
-mkdir: cannot create directory `9': File exists
+mkdir 'seq 1 2 10'        创建出1到10内的奇数文件目录，不能与文件名相同，否则无法创建
+[ly@vagrant-centos65 ~]$ mkdir 'seq 1 2 10'
+mkdir: cannot create directory '1': File exists
+mkdir: cannot create directory '3': File exists
+mkdir: cannot create directory '5': File exists
+mkdir: cannot create directory '7': File exists
+mkdir: cannot create directory '9': File exists
 [ly@vagrant-centos65 ~]$ cd 111
-[ly@vagrant-centos65 111]$ mkdir `seq 1 2 10`
+[ly@vagrant-centos65 111]$ mkdir 'seq 1 2 10'
 [ly@vagrant-centos65 111]$ ls
 1  222  3  5  7  9
 ```
