@@ -3,6 +3,7 @@
 ---
 #### 6个常用命令：  
 ![201706101049](..\images\2017\201706101049.png) 
+
 注：Workspace工作区； Index/Stage暂存区； Repository仓库区（或本地仓库）； Remote远程仓库；
 
 #### 命令整理
