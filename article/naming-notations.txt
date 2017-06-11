@@ -4,6 +4,7 @@
 
 linux-  启用
   base-  基础
+    vim
   centos-  与其他版本有区别才启用，比如安装啥的
   ubuntu-  与其他版本有区别才启用
 mysql-
