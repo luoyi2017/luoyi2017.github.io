@@ -50,7 +50,7 @@
     <option value="coffee">找小姐姐一起喝咖啡</option>
 </select>
 <!-- selected="selected"默认选中 -->
-<!-- size="2"  现实两行下拉项 -->
+<!-- size="2"  实现两行下拉项 -->
 <!-- disabled  禁止选择 -->
 ```
 > selected默认选择一项
@@ -61,7 +61,7 @@
 ```html
 <textare cols="30" rows="10"></textarea>
 ```
-clos显示多少列，rows现实多少行
+cols显示多少列，rows现实多少行
 
 
 
@@ -72,7 +72,7 @@ clos显示多少列，rows现实多少行
 
 
 ## 重置按钮
-回到表单初识状态
+回到表单初始状态
 ```html
 <input type="reset" value="重置表单" />
 ```
@@ -88,7 +88,7 @@ clos显示多少列，rows现实多少行
 
 ## label元素
 
-为input元素定义一个标记，label元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果你在label元素内点击文本，就会触发此控件。就是说，当用户选择该标签是，浏览器就会自动將焦点转到和标签相关的表单控件上
+为input元素定义一个标记，label元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果你在label元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动將焦点转到和标签相关的表单控件上
 ```html
 <input id="man" type="radio" /><label for="man">男</label>
 ```
