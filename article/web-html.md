@@ -68,6 +68,9 @@
 # 图片标签：
 <img src="图片路径" alt="搜索关键词" width="图片宽" height="图片高" title="鼠标移到图片后的提示信息"/>
 
+# 按钮标签：
+<button id="btn">变化</button>
+
 # 无序列表：默认会有小黑圆点 有的浏览器可能呈现空心小圆点
 <ul type="circle">
     <li>disc:默认，实心小圆圈</li>

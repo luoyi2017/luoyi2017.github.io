@@ -11,6 +11,8 @@ CSS（层叠样式表）用来规定HTML文档的展现形式，调整颜色，�
  
 二、使用style标签： 将样式规则写在<style>...</style>标签之中。 
     通常是将整个的 <style>...</style>结构写在网页的<head> </head>部份之中。这种用法的优点就是在于整篇文件的统一性，只要是有声明的的元件即会套用该样式规则。缺点就是在个别元件的灵活度不足。
+    <div class="box"></div>  用.box{}来写样式
+    <div id="box"></div>     用#box{}来写样式
 
 三、使用link标签： 将样式规则写在.css的样式档案中，再以<link>标签引入。 
     假设我们把样式规则存成一个example.css的档案，我们只要在网页中加入 
@@ -217,6 +219,8 @@ display: none;            隐藏元素
 display: inline;          转变成内联元素inline，取消前后换行
 display: inline-block;    转变成内联块
 display: block;           转变成块
+
+
 
 
 
