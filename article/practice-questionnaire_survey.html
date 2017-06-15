@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!-- 给浏览器解析的，我这个文档是html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" /> 
+        <meta name="description" content="描述，80字以内" />
+        <meta name="keyword" content="关键字" />
+        <title>手机市场需求调查问卷</title>
+        <style>
+            body {
+                background: url(https://cdn.pixabay.com/photo/2017/03/24/17/10/maldives-2171627_960_720.jpg);
+                /*background: url(../images/2017/maldives-2171627_960_720.jpg);*/
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .boxA {
+                background-color: rgba(255,255,255,0.5);
+                width: 900px;
+                height: 1700px;
+                margin-top: 70px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .title {
+                color: rgb(34, 141, 210);
+                padding-top: 60px;/*此处用margin无效*/
+                margin-left: 325px;
+                margin-right: 325px;
+            }
+            form {
+                width: 740px;
+                padding-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .p1 {
+                text-indent: 2em;/*首字符缩进*/
+                line-height: 25px;/*行间距*/
+                padding-bottom: 20px;/*与下边框间距*/
+                border-bottom: 1px dashed gray;/*1像素虚线，实线为solid*/
+            }
+            .box1 {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                border-bottom: 1px dashed gray;
+            }
+            .ast {
+                color: red;
+            }
+            .input {
+                line-height: 30px;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid lightgray;
+                width: 700px;
+                line-height: 27px;
+                text-align: center;
+                border-collapse: collapse;/*合并为一个单一的边框*/
+            }
+            .box2 {
+                padding-top: 50px;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+            .commit {
+                background: skyblue;
+                font-size: 20px;
+                padding: 5px 35px;
+            }
+        </style>
+        <link rel="shortcut icon" href="http://pngimg.com/uploads/earth/earth_PNG39.png">
+    </head>
+    <body>
+        <div class="boxA">
+            <h2 class="title">手机市场需求调查问卷</h2>
+            <form action="" method="get">
+                <p class="p1">
+                    您对手机有什么需求呢？您更喜欢怎样的手机呢？您理想的手机应该是怎样的？为了了解目前你对手机的需求，我们希望你能协助填写这份差问卷，非常感谢！
+                </p>
+                <div class="box1">
+                    <h4>
+                        <span class="">1. 您目前使用的手机品牌是什么？</span>
+                        <span class="ast">*</span>
+                    </h4>
+                    <div class="input">
+                        &nbsp;<input id="huawei" name="only1" value="hawei" type="radio" /><label for="huawei">华为</label>&nbsp;
+                        <input id="sanxing" name="only1" value="sanxing" type="radio" /><label for="sanxing">三星</label>&nbsp;
+                        <input id="pingguo" name="only1" value="pingguo" type="radio" /><label for="pingguo">苹果</label>&nbsp;
+                        <input id="xiaomi" name="only1" value="xiaomi" type="radio" /><label for="xiaomi">小米</label>&nbsp;
+                        <input id="meizu" name="only1" value="meizu" type="radio" /><label for="meizu">魅族</label>&nbsp;
+                        <input id="lianxiang" name="only1" value="lianxiang" type="radio" /><label for="lianxiang">联想</label>&nbsp;
+                        <input id="qita" name="only1" value="qita" type="radio" /><label for="qita">其他</label>
+                        <input name="qita" type="text" /><!-- 如何实现其他单选框和输入框绑定在一起？ -->
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>
+                        <span class="">2. 您手机的价位是多少？</span>
+                        <span class="ast">*</span>
+                    </h4>
+                    <div class="input">
+                        &nbsp;<input id="999" name="only2" value="999" type="radio" /><label for="999">1000元以下</label><br />
+                        &nbsp;<input id="1999" name="only2" value="1999" type="radio" /><label for="1999">1000-1999元</label><br />
+                        &nbsp;<input id="2999" name="only2" value="2999" type="radio" /><label for="2999">2000-2999元</label><br />
+                        &nbsp;<input id="4999" name="only2" value="4999" type="radio" /><label for="4999">3000-4999元</label><br />
+                        &nbsp;<input id="5000" name="only2" value="5000" type="radio" /><label for="5000">5000元以上</label><br />
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>
+                        <span class="">3. 您目前使用的是4G手机吗？</span>
+                        <span class="ast">*</span>
+                    </h4>
+                    <div class="input">
+                        &nbsp;<input id="yes" name="only3" value="yes" type="radio" /><label for="yes">是</label><br />
+                        &nbsp;<input id="no" name="only3" value="no" type="radio" /><label for="no">否</label><br />  
+                    </div>
+                </div>
+                <div class="box1">
+                    <h4>
+                        <span class="">4. 您最常用手机的那些功能？</span>
+                        <span class="ast">*</span>
+                    </h4>
+                    <div class="input">
+                        &nbsp;<input id="music" name="music" value="" type="checkbox" /><label for="music">音乐</label><br />
+                        &nbsp;<input id="photo" name="photo" value="" type="checkbox" /><label for="photo">拍照</label><br />
+                        &nbsp;<input id="game" name="game" value="" type="checkbox" /><label for="game">游戏</label><br />
+                        &nbsp;<input id="business" name="business" value="" type="checkbox" /><label for="business">商务</label><br />
+                        &nbsp;<input id="gps" name="gps" value="" type="checkbox" /><label for="gps">导航</label><br />
+                        &nbsp;<input id="data" name="data" value="" type="checkbox" /><label for="data">数据应用</label><br />
+                        &nbsp;<input id="other" name="other" value="" type="checkbox" /><label for="other">其它</label>
+                        <input name="other" type="text" />
+                    </div>
+                    
+                </div>
+                <div class="box1">
+                    <h4>
+                        <span class="">5. 您对现在手机性能表现的评价是？</span>
+                        <span class="ast">*</span>
+                    </h4><br />
+                    <table border="1"><!-- table内的数据怎么传给服务器？method="post" -->
+                        <thead>
+                            <tr class="">
+                                <th></th>
+                                <th>&nbsp;非常不满意&nbsp;</th>
+                                <th>&nbsp;不满意&nbsp;</th>
+                                <th>&nbsp;一般&nbsp;</th>
+                                <th>&nbsp;满意&nbsp;</th>
+                                <th>&nbsp;非常满意&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td>&nbsp;待机时间长短&nbsp;</td>
+                                <td><input id="" name="only51" value="t11" type="radio" /></td>
+                                <td><input id="" name="only51" value="t12" type="radio" /></td>
+                                <td><input id="" name="only51" value="t13" type="radio" /></td>
+                                <td><input id="" name="only51" value="t14" type="radio" /></td>
+                                <td><input id="" name="only51" value="t15" type="radio" /></td>
+                            </tr>
+                            <tr class="">
+                                <td>&nbsp;通话质量效果&nbsp;</td>
+                                <td><input id="" name="only52" value="t21" type="radio" /></td>
+                                <td><input id="" name="only52" value="t22" type="radio" /></td>
+                                <td><input id="" name="only52" value="t23" type="radio" /></td>
+                                <td><input id="" name="only52" value="t24" type="radio" /></td>
+                                <td><input id="" name="only52" value="t25" type="radio" /></td>
+                            </tr>
+                            <tr class="">
+                                <td>&nbsp;程序流畅程度&nbsp;</td>
+                                <td><input id="" name="only53" value="t31" type="radio" /></td>
+                                <td><input id="" name="only53" value="t32" type="radio" /></td>
+                                <td><input id="" name="only53" value="t33" type="radio" /></td>
+                                <td><input id="" name="only53" value="t34" type="radio" /></td>
+                                <td><input id="" name="only53" value="t35" type="radio" /></td>
+                            </tr>
+                            <tr class="">
+                                <td>&nbsp;硬件工艺质量&nbsp;</td>
+                                <td><input id="" name="only54" value="t41" type="radio" /></td>
+                                <td><input id="" name="only54" value="t42" type="radio" /></td>
+                                <td><input id="" name="only54" value="t43" type="radio" /></td>
+                                <td><input id="" name="only54" value="t44" type="radio" /></td>
+                                <td><input id="" name="only54" value="t45" type="radio" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box1">
+                    <h4>
+                        <span class="">6. 您目前从事的行业：</span>
+                        <span class="ast">*</span>
+                    </h4>
+                    <div class="input">
+                        &nbsp;<select name="industry" id="">
+                            <option selected="selected" value="请选择">请选择</option>
+                            <option value="计算机软件">计算机软件</option>
+                            <option value="计算机硬件">计算机硬件</option>
+                            <option value="计算机服务（系统/数据/维修）">计算机服务（系统/数据/维修）</option>
+                            <option value="家电">家电</option>
+                            <option value="通信">通信</option>
+                            <option value="电子">电子</option>
+                            <option value="电力">电力</option>
+                            <option value="教育">教育</option>
+                            <option value="银行">银行</option>
+                            <option value="保险">保险</option>
+                            <option value="贸易">贸易</option>
+                            <option value="消费品">消费品</option>
+                            <option value="广告">广告</option>
+                            <option value="其他行业">其他行业</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box2">
+                    <input class="commit" type="submit" />   
+                </div>    
+            </form>
+            
+        </div>
+    
+    </body>
+</html>
