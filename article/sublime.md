@@ -27,6 +27,7 @@ li*3>a[href="#"] + table 快速创建3个li标签，每个标签内包含href="#
 li*3>a[href="#"]>img+span{小米} + table
 .logo + table      可快速创建出<div class="logo"></div>
 db + table         在css中快速创建出display: block;
+dib + table        在css中快速创建出display: inline-block;
 ```
 
 #### 改html模板
