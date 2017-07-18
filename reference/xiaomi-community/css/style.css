@@ -1,0 +1,603 @@
+/* ======================== */
+/*  1. ResetCss/Default
+/* ======================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+    background: #f3f3f3;
+    min-width: 990px;
+}
+li {
+    list-style: none;
+}
+.wrap990 {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+
+
+
+/* ======================== */
+/*  2. Header
+/* ======================== */
+.header {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.67);
+}
+.logo {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: url('../img/logo_cn.png');
+    left: 0;
+    top: 0;
+}
+.download {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    line-height: 50px;
+    left: 162px;
+    color: #ff7e3e;
+    background: url('../img/header_mobile.png')no-repeat 0 center;
+    padding-left: 14px;
+}
+.download:hover .phone-qrcode {
+    display: block;
+}
+.phone-qrcode {
+    display: none;
+    padding: 17px 0 15px 0;
+    text-align: center;
+    width: 185px;
+    height: 170px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+    background: white;
+}
+.phone-qrcode p {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin-top: -9px;    
+}
+.nav {
+    overflow: hidden;
+    position: absolute;
+    left: 240px;
+}
+.nav li {
+    float: left;
+    padding: 0 8px;
+}
+.nav li:last-child {
+    padding-left: 0;
+}
+.nav li a {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
+.icon-xjx {
+    display: inline-block;
+    border-top: 5px solid white;
+    border-left: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.write {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/header_icon.png')no-repeat 0 -13px;
+    margin-top: 16px;
+}
+.login-reg {
+    float: right;
+    margin-top: 17px;
+}
+.login-reg a {
+    display: inline-block;
+    line-height: 14px;
+    font-size: 14px;
+    height: 14px;
+    color: white;
+    padding: 0 5px;
+}
+.login-reg .l-r-border {
+    padding-right: 10px;
+    border-left: 1px solid white;
+}
+
+
+
+
+
+/* ======================== */
+/*  3. Main
+/* ======================== */
+
+.main-wrap {
+    margin: 10px auto;
+}
+.left {
+    width: 730px;
+    float: left;
+}
+.right {
+    width: 250px;
+    float: right;
+}
+    /* ==================== */
+    /*  3.1 Hot Section
+    /* ==================== */
+    .hot-section {
+        height: 58px;
+        background: white;
+        border: 1px solid #e5e5e5;
+    }
+    .hot-title {
+        float: left;
+        padding-left: 20px;
+    }
+    .hot-content {
+        margin-left: 86px;
+    }
+    .hot-title a {
+        display: block;
+        line-height: 58px;
+        font-size: 12px;
+    }
+    .hot-list {
+        overflow: hidden;
+    }
+    .hot-list li {
+        float: left;
+        line-height: 58px;
+        font-size: 12px;
+        margin-right: 16px;
+    }
+    .rec-content ul li a:hover,.nav li a:hover,.hot-list li a:hover {
+        color: #ff8b3d;
+    }
+    .hot-list li a img {
+        margin: -4px -1px 0 0px;
+
+        vertical-align: middle
+    }
+    /* ==================== */
+    /*  3.2 Article
+    /* ==================== */
+    .article-section {
+        margin-top: 10px;
+        padding: 20px 30px;
+        background: white;
+        border: 1px solid #e5e5e5;
+    }
+    .article-head a {
+        display: inline-block;
+        line-height: 30px;
+        padding: 0 10px;
+
+    }
+    .article-head .on {
+        background: #f3f3f3;
+    }
+    .article-head .publish {
+        background: #ff8b3d;
+        color: white;
+        padding: 0 29px;
+        font-size: 12px;
+        float: right;
+        line-height: 32px;
+    }
+    .publish:hover {
+        background: #ff7519;
+    }
+    .article-avatar {
+        margin: 0 0 0 0;
+        float: left;
+    }
+    .avatar img {
+        border-radius: 50%;
+    }
+    .article-wrap ul li {
+        padding-top: 18px;
+    }
+    .article-content {
+        margin-left: 60px;
+        padding-top: 8px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 16px;
+    }
+    .article-title a {
+        font-size: 16px;
+        max-width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        text-overflow: ellipsis;
+    }
+    .article-info {
+        margin-top: 9px;
+    }
+    .article-info a,.article-info span {
+        font-size: 12px;
+        color: #888;
+    }
+    .article-title img {
+        vertical-align: middle;
+        margin: -4px 0 0 5px;
+    }
+    .level {
+        display: inline-block;
+        width: 19px;
+        height: 10px;
+        background-image: url('../img/level.png');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        margin-left: 1px;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+    .vip-blue {
+        width: 12px;
+        background-position: 0 -33px;
+    }
+    .vip-orange {
+        width: 12px;
+        background-position: -12px -33px;
+    }
+    .vip0 {
+        background-position: -24px -33px;
+    }
+    .vip1 {
+        background-position: -43px -33px;
+    }
+    .vip2 {
+        background-position: -62px -33px;
+    }
+    .vip3 {
+        background-position: -81px -33px;
+    }
+    .vip4 {
+        background-position: -100px -33px;
+    }
+    .vip5 {
+        background-position: -119px -33px;
+    }
+    .vip6 {
+        background-position: -138px -33px;
+    }
+    .vip7 {
+        background-position: -157px -33px;
+    }
+    .vip8 {
+        background-position: -176px -33px;
+    }
+    .author:hover {
+        color: #ff8b3d;
+    }
+    .article-desc {
+        float: right;
+        margin-top: 3px;
+    }
+    .icon-desc {
+        display: inline-block;
+        width: 20px;
+        height: 11px;
+        background: url('../img/view_recomment.png');
+        background-repeat: no-repeat;
+        background-position: 1px 0px;
+    }
+    .icon-desc.icon-comment {
+        background-position: 0px -12px;
+        margin: -2px -2px 0 -2px;
+        vertical-align: middle;
+    }
+    .article-desc span {
+        color: #9da5ab;
+    }
+    .paging {
+        text-align: center;
+        padding-top: 46px;
+    }
+    .paging li {
+        display: inline-block;
+    }
+    .paging li a {
+        color: #333;
+        background: white;
+        display: inline-block;
+        border: 1px solid #e5e5e5;
+        line-height: 30px;
+        height: 30px;
+    }
+    .page a,.page-pre a,.page-next a {
+        width: 30px;
+    }
+    .page-pre a,.page-next a {
+        margin: 0 10px;
+    }
+    .page-first a,.page-pre a,.page-next a,.page-last a {
+        padding: 0 10px;
+    }
+    .paging a:hover {
+        border: 1px solid #ff8b3d;
+        background: #ff8b3d;
+        color: white;
+    }
+    .page .on,.page .on:hover {
+        background: white;
+        border-color: #ff8b3d;
+        color: #ff8b3d;
+        cursor: default;
+    }
+    /* ==================== */
+    /*  3.3 Hot Recommend
+    /* ==================== */
+    .recommend {
+        background: #FFFFFF;
+        border: 1px solid #e5e5e5;
+        margin-bottom: 15px;
+    }
+    .rec-title,.rec-content ul {
+        width: 252px;
+        margin-left: -1px;
+        overflow: hidden;
+    }
+
+    .rec-title span {
+        float: left;
+        width: 125px;
+        height: 36px;
+        line-height: 32px;
+        border-top: 4px solid transparent;
+        text-align: center;
+        font-weight: bold;
+        background: #fafafa;
+        cursor: pointer;
+        border-left: 1px solid #e5e5e5;
+    }
+    .rec-title .on {
+        border-top: 4px solid #ccd1d9;
+        background: white;
+    }
+    .rec-header {
+        width: 248px;
+        overflow: hidden;
+    }
+    .rec-content ul li {
+        float: left;
+        width: 125px;
+        height: 36px;
+        line-height: 36px;
+        border-left: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
+    }
+    .rec-content ul li a {
+        display: block;
+        text-align: center;
+    }
+    /* ==================== */
+    /*  3.5 Sign In
+    /* ==================== */
+    .sign-in {
+        margin-top: 15px;
+        background: #ff6b3d;
+        width: 249px;
+        height: 50px;
+        position: relative;
+        background-image: url('../img/tou.png');
+        background-position: 14px center;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+    }
+    .sign-info {
+        height: 46px;
+        width: 111px;
+        background: white;
+        float: right;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        padding: 0 5px;
+    }
+    .sign-in span {
+        font-size: 24px;
+        color: white;
+        line-height: 52px;
+        margin-left: 54px;
+    }
+    .sign-info p {
+        height: 23px;
+        padding-left: 30px;
+        font-size: 12px;
+        color: #606060;
+        background-image: url('../img/tou2.jpg');
+        background-repeat: no-repeat;
+        line-height: 26px;
+    }
+    .sign-info .sign-person {
+        font-size: 14px;
+        background-position: 5px 0px;
+    }
+    .sign-info .sign-view {
+        height: 22px;
+        border-top: 1px solid #e5e5e5;
+        background-position: 5px -25px;
+    }
+    /* ==================== */
+    /*  3.6 Hot Point
+    /* ==================== */
+    .hot-point,.rom {
+        margin-top: 10px;
+        background: white;
+        border: 1px solid #e5e5e5;
+        padding: 19px 19px 25px 29px;
+    }
+    .hot-point h4,.rom h4 {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 8px;
+    }
+    .hot-point-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .hot-point-content p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    /* ==================== */
+    /*  3.7 ROM
+    /* ==================== */
+    .rom h4 {
+        text-align: left;
+    }
+    .rom h4 a {
+        font-weight: normal;
+        float: right;
+        font-size: 14px;
+        color: #333;
+    }
+    .rom {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .rom a {
+        font-size: 12px;
+        color: #8c8c8c;
+    }
+    .rom .rom-recommend {
+        display: block;
+        height: 100px;
+        color: #ff8b3d;
+        margin-top: 34px;
+    }
+    .rom-recommend b {
+        font-size: 36px;
+    }
+    .rom-recommend span {
+        font-size: 16px;
+    }
+    .rec-text {
+        margin-top: 13px;
+    }
+    .rom-recommend p {
+        height: 20px;
+        line-height: 20px;
+        color: #333;
+    }
+    .rom .update {
+        width: 190px;
+        height: 38px;
+        display: block;
+        background: #ff8b3d;
+        color: white;
+        line-height: 38px;
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 18px;
+    }
+    .rom .update:hover{
+        background: #ff7519;
+    }
+    .about {
+        text-align: center;
+    }
+    .tools a:not(.about) {
+        margin-top: 6px;
+        display: inline-block;
+    }
+    .tools-text {
+        border-left: 1px solid #cacaca;
+        border-right: 1px solid #cacaca;
+        padding: 0 3px;
+        margin: 0 2px;
+    }
+    .rom .all-rom {
+        color: #ff8b3d;
+    }
+
+
+
+
+
+
+
+
+/* ======================== */
+/*  4. Footer
+/* ======================== */
+.footer-up {
+    padding: 42px 0;
+    background: #3f3f3f;
+}
+.footer-down {
+    background: rgba(0,0,0,0.67);
+}
+    /* ==================== */
+    /*  4.1 Friend Link
+    /* ==================== */
+    .f-up-wrap ul li a:hover {
+        color: #ff8b3d;
+    }
+    .f-up-wrap ul {
+        float: left;
+        border-right: 1px solid #4a4a4a;
+    }
+    .f-up-wrap ul li a {
+        color: #6d6d6d;
+        display: block;
+        width: 119px;
+        padding-left: 45px;
+    }
+    .f-up-wrap ul li:last-child {
+        margin-top: 20px;
+    }
+    .f-up-wrap .agj {
+        border: none;
+    }
+    .footer-link,.f-down-wrap p {
+        display: block;
+        height: 20px;
+        line-height: 20px;
+    }
+    .footer-logo {
+        float: left;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/milogo.png');
+    }
+    .f-down-wrap a,.f-down-wrap p {
+        color: #dfdfdf;
+        font-size: 12px;
+    }
+    .f-down-wrap p a {
+        color: white;
+    }
+    .f-down-wrap {
+        padding: 20px 0;
+    }
+

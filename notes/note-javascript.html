@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- 给浏览器解析的，我这个文档是html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" /> 
+        <meta name="description" content="描述，80字以内" />
+        <meta name="keyword" content="关键字" />
+        <title>title</title>
+        <script>
+        	function displayDate(){
+        		document.getElementById("demo").innerHTML=Date();
+        	}
+        </script>
+    </head>
+    <body>
+    	<p id="demo">yi</p>
+        <button type="button" onclick="displayDate()">显示日期</button>
+    </body>
+</html>

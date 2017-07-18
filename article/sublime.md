@@ -37,6 +37,55 @@ dib + table        在css中快速创建出display: inline-block;
 视图-布局-列：2或按快捷键alt+shift+2
 
 
+PackageControl.io  包下载
+
+Emmet  （HTML 补全）emmet.io 快捷键的表
+
+ColorPicker（调色板，颜色选择器）
+
+SublimeTmpl（模板）
+
+view in browser(以浏览器打开预览)
+
+Anaconda （Python代码提示插件）
+
+Djaneiro（Django语法补全）
+http://blog.csdn.net/u013861109/article/details/53106074
+安装插件时，先使用Ctrl+Shift+P（Tools→Command Palette...）打开控制面板，输入PackageControl  回车
+选择Package Control:Install Package,回车。
+
+div#box>p.p$ + table  快速创建出如下：
+        <div id="box">
+			<p class="p1"></p>
+		</div>
+
+div#box>p.p*3 + table  快速创建出如下：
+        <div id="box">
+			<p class="p"></p>
+			<p class="p"></p>
+			<p class="p"></p>
+		</div>
+        
+
+
+ctrl + w 关闭
+ctrl + shift + t 找到历史记录并重新打开
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -220,6 +220,7 @@ display属性：
     display: inline;          转变成内联元素inline，取消前后换行
     display: inline-block;    转变成内联块，这样便可以设置宽度高度       
     display: none;            隐藏元素
+    display: list-item;       将多个元素作为列表来显示，内容前面自动加上黑点。
     例：实现鼠标移动到盒子a上时显示b，离开时隐藏b；
     /* CSS部分 */
     .a {
@@ -329,6 +330,7 @@ Shadow阴影：
 
 li标签：
     li {list-style: none;}    可把li标签的小黑点去掉
+    li {list-style: disc;}    恢复小黑点
 
 link标签：
     <link rel="stylesheet" href=""><!-- href内填**.css -->

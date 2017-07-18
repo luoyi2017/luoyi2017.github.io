@@ -1,0 +1,270 @@
+/* ======================== */
+/*  1. ResetCss/Default
+/* ======================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: #f3f3f3;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+.wrap1080 {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+.right ul {
+	margin-top: 7px;
+}
+.tan {
+	background: tan;
+	padding: 4px 10px;
+    color: white;
+}
+
+/* ======================== */
+/*  2. Header
+/* ======================== */
+.header {
+    background: rgba(0, 0, 0, 0.67);
+}
+.header-wrap {
+	height: 50px;
+}
+.nav {
+    overflow: hidden;
+    position: absolute;
+}
+.nav li {
+    float: left;
+}
+.nav a {
+	padding: 17px 15px;
+	/*border-right: 1px solid gray;*/
+}
+.header-wrap a {
+    line-height: 50px;
+    color: white;
+}
+.nav li:first-child a {
+}
+.nav a:hover {
+	background: #ff9933;
+}
+.relative-a {
+	position: relative;
+}
+#hide-a {
+	background: red;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	color: red;
+	z-index: 2;
+	width: 100px;
+    height: 50px;
+    padding: 0px 0px;
+}/*就是不显示，暂时放弃*/
+.search {
+	float: right;
+}
+.search input {
+	padding: 3px 0;
+}
+.search a {
+	padding-right: 15px;
+}
+
+
+
+/* ======================== */
+/*  3. Main
+/* ======================== */
+.main-wrap {
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.left {
+	width: 760px;
+    float: left;
+}
+.right {
+	width: 310px;
+    float: right;
+}
+    /* ==================== */
+    /*  3.1 article
+    /* ==================== */
+    .article-top {
+		height: 270px;
+		background: #f3f3f3;
+		border: 1px solid #e5e5e5;
+	}
+	.article-top-left {
+		width: 600px;
+		float: left;
+	}
+	.article-top-left img {
+		height: 270px;
+		width: 600px;
+	}
+	.article-top-right {
+		width: 158px;
+		height: 270px;
+		float: right;
+		background: #D28524;
+	}
+	.a-t-r-middle {
+		width: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+	.t-title {
+		height: 130px;
+    	font-size: 21px;
+    	line-height: 1.2;
+    	color: white;
+    	border-bottom: 1px solid #fff;
+    	/*padding-bottom: 10px;*/
+    	margin-bottom: 10px;
+	}
+	.t-content {
+		height: 100px;
+		color: white;
+	}
+	.article {
+		height: 190px;
+		background: white;
+		margin-top: 10px;
+		border: 1px solid #e5e5e5;
+	}
+	.article-left {
+		/*width: 200px;
+		height: 180px;*/
+		float: left;
+	}
+	.article-left img {
+		width: 261px;
+    	height: 160px;
+    	margin-top: 15px;
+	}
+	.article-right {
+		float: right;
+    	width: 463px;
+    	height: 150px;
+    	padding: 20px 12px;
+    	/* margin-top: 10px; */
+	}
+	.name {
+		height: 36px;
+	}
+	.n-title {
+		font-size: 22px;
+    	letter-spacing: -1px;
+    	font-weight: bold;
+	}
+	.desp {
+		height: 66px;
+		color: gray;
+		padding: 12px 18px 12px 2px;
+	}
+	.tips {
+		height: 30px;
+	}
+	.tips span {
+		float: left;
+	}
+	.tips ul {
+		float: left;
+		margin-left: 10px;
+	}
+	.tips li {
+		float: left;
+	}
+	.tips a {
+		background: rgba(142, 141, 148, 0.67);
+    	margin: 0 10px;
+    	padding: 6px 11px;
+    	border-radius: 20px; 
+    	font-size: 15px;
+	}
+
+    /* ==================== */
+    /*  3.2 main-right
+    /* ==================== */
+	.top {
+		height: 240px;
+		background: white;
+		border: 1px solid #e5e5e5;
+	}
+	.right p {
+		height: 45px;
+		background: skyblue;
+		line-height: 45px;
+		padding-left: 20px;
+	}
+	.top span {
+		background: skyblue;
+		line-height: 200%;
+		padding: 0 5px;
+		margin: 0 1px 0 10px;
+		border-radius: 2px;
+		font-size: 18px;
+
+	}
+	.tag {
+		height: 300px;
+		background: white;
+		margin-top: 10px;
+		border: 1px solid #e5e5e5;
+	}
+	.tag li {
+		float: left;
+	}
+	.tag a {
+		line-height: 239%;
+    	margin-left: 6px;
+    	padding: 6px 10px;
+    	color: white;
+	}
+	.pigeonhole {
+		height: 600px;
+		background: white;
+		margin-top: 10px;
+		border: 1px solid #e5e5e5;
+	}
+	.pigeonhole li {
+		list-style: disc;
+		margin-left: 30px;
+	}
+	.pigeonhole a {
+		line-height: 180%;
+	}
+
+
+
+/* ======================== */
+/*  4. Footer
+/* ======================== */
+.footer-up {
+	height: 90px;
+	background: #3f3f3f;
+}
+.footer-down {
+	height: 50px;
+	background: rgba(0,0,0,0.67);
+}
+
+
