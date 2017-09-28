@@ -297,3 +297,14 @@ $ git clone git://github.com/schacon/grit.git
 ```
 #### 参考资料
 [Git - Book](https://git-scm.com/book/zh/v1)
+
+
+$ git clone git://github.com/schacon/grit.git
+这会在当前目录下创建一个名为grit的目录，其中包含一个 .git 的目录，用于保存下载下来的所有版本记录，然后从中取出最新版本的文件拷贝。
+
+# 添加当前目录的所有文件到暂存区
+$ git add .
+
+# 显示有变更的文件
+$ git status
+
